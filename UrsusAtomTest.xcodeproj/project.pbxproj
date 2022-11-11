@@ -11,6 +11,12 @@
 		47B16F372902814F00FDC466 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B16F362902814F00FDC466 /* ContentView.swift */; };
 		47B16F392902815000FDC466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47B16F382902815000FDC466 /* Assets.xcassets */; };
 		47B16F3C2902815000FDC466 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47B16F3B2902815000FDC466 /* Preview Assets.xcassets */; };
+		47B16F44290283E700FDC466 /* UrsusAtom in Frameworks */ = {isa = PBXBuildFile; productRef = 47B16F43290283E700FDC466 /* UrsusAtom */; };
+		47B16F46290283E700FDC466 /* UrsusPhoneticBase in Frameworks */ = {isa = PBXBuildFile; productRef = 47B16F45290283E700FDC466 /* UrsusPhoneticBase */; };
+		47B16F48290284DC00FDC466 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B16F47290284DC00FDC466 /* File.swift */; };
+		47B16F4B2902868500FDC466 /* UrsusHTTP in Frameworks */ = {isa = PBXBuildFile; productRef = 47B16F4A2902868500FDC466 /* UrsusHTTP */; };
+		47B16F4F2903C86F00FDC466 /* CueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B16F4E2903C86E00FDC466 /* CueModel.swift */; };
+		47B16F5129055DA900FDC466 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B16F5029055DA900FDC466 /* Types.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,9 @@
 		47B16F362902814F00FDC466 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		47B16F382902815000FDC466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47B16F3B2902815000FDC466 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		47B16F47290284DC00FDC466 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		47B16F4E2903C86E00FDC466 /* CueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CueModel.swift; sourceTree = "<group>"; };
+		47B16F5029055DA900FDC466 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47B16F46290283E700FDC466 /* UrsusPhoneticBase in Frameworks */,
+				47B16F4B2902868500FDC466 /* UrsusHTTP in Frameworks */,
+				47B16F44290283E700FDC466 /* UrsusAtom in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +65,9 @@
 			children = (
 				47B16F342902814F00FDC466 /* UrsusAtomTestApp.swift */,
 				47B16F362902814F00FDC466 /* ContentView.swift */,
+				47B16F47290284DC00FDC466 /* File.swift */,
+				47B16F4E2903C86E00FDC466 /* CueModel.swift */,
+				47B16F5029055DA900FDC466 /* Types.swift */,
 				47B16F382902815000FDC466 /* Assets.xcassets */,
 				47B16F3A2902815000FDC466 /* Preview Content */,
 			);
@@ -83,6 +98,11 @@
 			dependencies = (
 			);
 			name = UrsusAtomTest;
+			packageProductDependencies = (
+				47B16F43290283E700FDC466 /* UrsusAtom */,
+				47B16F45290283E700FDC466 /* UrsusPhoneticBase */,
+				47B16F4A2902868500FDC466 /* UrsusHTTP */,
+			);
 			productName = UrsusAtomTest;
 			productReference = 47B16F312902814F00FDC466 /* UrsusAtomTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,10 @@
 				Base,
 			);
 			mainGroup = 47B16F282902814F00FDC466;
+			packageReferences = (
+				47B16F42290283E700FDC466 /* XCRemoteSwiftPackageReference "UrsusAtom" */,
+				47B16F492902868500FDC466 /* XCRemoteSwiftPackageReference "UrsusHTTP" */,
+			);
 			productRefGroup = 47B16F322902814F00FDC466 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				47B16F372902814F00FDC466 /* ContentView.swift in Sources */,
+				47B16F48290284DC00FDC466 /* File.swift in Sources */,
 				47B16F352902814F00FDC466 /* UrsusAtomTestApp.swift in Sources */,
+				47B16F5129055DA900FDC466 /* Types.swift in Sources */,
+				47B16F4F2903C86F00FDC466 /* CueModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +364,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47B16F42290283E700FDC466 /* XCRemoteSwiftPackageReference "UrsusAtom" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/famousj/UrsusAtom";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		47B16F492902868500FDC466 /* XCRemoteSwiftPackageReference "UrsusHTTP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/famousj/UrsusHTTP";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47B16F43290283E700FDC466 /* UrsusAtom */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47B16F42290283E700FDC466 /* XCRemoteSwiftPackageReference "UrsusAtom" */;
+			productName = UrsusAtom;
+		};
+		47B16F45290283E700FDC466 /* UrsusPhoneticBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47B16F42290283E700FDC466 /* XCRemoteSwiftPackageReference "UrsusAtom" */;
+			productName = UrsusPhoneticBase;
+		};
+		47B16F4A2902868500FDC466 /* UrsusHTTP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47B16F492902868500FDC466 /* XCRemoteSwiftPackageReference "UrsusHTTP" */;
+			productName = UrsusHTTP;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 47B16F292902814F00FDC466 /* Project object */;
 }
